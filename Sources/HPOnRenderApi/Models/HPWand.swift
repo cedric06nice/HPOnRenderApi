@@ -8,11 +8,11 @@
 import Foundation
 
 public struct HPWand: Codable, Hashable {
-    let wood: HPWandWood
-    let core: HPWandCore
-    let length: Double?
+    public let wood: HPWandWood
+    public let core: HPWandCore
+    public let length: Double?
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case wood = "wood"
         case core = "core"
         case length = "length"

@@ -8,28 +8,28 @@
 import Foundation
 
 public struct HPCharacter: Codable, Hashable {
-    let id: UUID
-    let name: String
-    let alternateNames: [String]
-    let species: HPSpecies
-    let gender: HPGender
-    let house: HPHouse
-    let dateOfBirth: String?
-    let yearOfBirth: Int?
-    let wizard: Bool
-    let ancestry: HPAncestry
-    let eyeColour: HPEyeColour
-    let hairColour: HPHairColour
-    let wand: HPWand
-    let patronus: HPPatronus
-    let hogwartsStudent: Bool
-    let hogwartsStaff: Bool
-    let actor: String
-    let alternateActors: [String]
-    let alive: Bool
-    let image: String
+    public let id: UUID
+    public let name: String
+    public let alternateNames: [String]
+    public let species: HPSpecies
+    public let gender: HPGender
+    public let house: HPHouse
+    public let dateOfBirth: String?
+    public let yearOfBirth: Int?
+    public let wizard: Bool
+    public let ancestry: HPAncestry
+    public let eyeColour: HPEyeColour
+    public let hairColour: HPHairColour
+    public let wand: HPWand
+    public let patronus: HPPatronus
+    public let hogwartsStudent: Bool
+    public let hogwartsStaff: Bool
+    public let actor: String
+    public let alternateActors: [String]
+    public let alive: Bool
+    public let image: String
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"
         case alternateNames = "alternate_names"

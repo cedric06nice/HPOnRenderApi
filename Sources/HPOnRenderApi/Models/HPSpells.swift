@@ -8,11 +8,11 @@
 import Foundation
 
 public struct HPSpells: Codable, Hashable {
-    let id: UUID
-    let name: String
-    let description: String
+    public let id: UUID
+    public let name: String
+    public let description: String
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"
         case description = "description"
