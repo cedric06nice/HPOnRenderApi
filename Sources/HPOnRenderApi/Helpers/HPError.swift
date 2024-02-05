@@ -7,12 +7,21 @@
 
 import Foundation
 
+/**
+ * The `HPError` enum represents an error that can occur in the HP application.
+ */
 public enum HPError: Error {
+    
+    /// An error indicating that the provided URL is not valid.
     case invalidURL
+    
+    /// An error indicating that no data is available.
     case missingData
 }
 
 extension HPError: LocalizedError {
+    
+    /// A localized description of the error.
     var description: String {
         switch self {
         case .invalidURL:

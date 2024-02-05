@@ -7,9 +7,20 @@
 
 import Foundation
 
+/**
+ * The `HPWand` struct represents the Harry Potter wands.
+ *
+ * It conforms to the `Codable` and `Hashable` protocols.
+ */
 public struct HPWand: Codable, Hashable {
+
+    /// The type of wood used for the wand.
     public let wood: HPWandWood
+
+    /// The core material of the wand.
     public let core: HPWandCore
+
+    /// The length of the wand in inches. Can be nil if not specified.
     public let length: Double?
 
     private enum CodingKeys: String, CodingKey {

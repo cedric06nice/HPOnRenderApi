@@ -28,5 +28,6 @@ let package = Package(
                 .copy("Mocks/spells.json"),
             ]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

@@ -7,26 +7,71 @@
 
 import Foundation
 
+/**
+ * The `HPCharacter` struct represents the Harry Potter characters.
+ *
+ * It conforms to the `Codable` and `Hashable` protocols.
+ */
 public struct HPCharacter: Codable, Hashable {
+    
+    /// A unique identifier for the character, represented as a UUID.
     public let id: UUID
+    
+    /// The name of the character, represented as a String.
     public let name: String
+    
+    /// An array of alternate names for the character, represented as an array of Strings.
     public let alternateNames: [String]
+    
+    /// The species of the character, represented by an instance of the `HPSpecies` enum.
     public let species: HPSpecies
+    
+    /// The gender of the character, represented by an instance of the `HPGender` enum.
     public let gender: HPGender
+    
+    /// The house that the character belongs to, represented by an instance of the `HPHouse` enum.
     public let house: HPHouse
+    
+    /// The date of birth of the character, represented as an optional String.
     public let dateOfBirth: String?
+    
+    /// The year of birth of the character, represented as an optional Int.
     public let yearOfBirth: Int?
+    
+    /// A boolean value indicating whether the character is a wizard or not.
     public let wizard: Bool
+    
+    /// The ancestry or lineage of the character, represented by an instance of the `HPAncestry` enum.
     public let ancestry: HPAncestry
+    
+    /// The eye color of the character, represented by an instance of the `HPEyeColour` enum.
     public let eyeColour: HPEyeColour
+    
+    /// The hair color of the character, represented by an instance of the `HPHairColour` enum.
     public let hairColour: HPHairColour
+    
+    /// Information about the wand owned by the character, represented by an instance of the `HPWand` struct.
     public let wand: HPWand
+    
+    /// The patronus animal associated with this character, represented by an instance of the `HPPatronus` struct.
     public let patronus: HPPatronus
+    
+    /// A boolean value indicating whether the character is a student at Hogwarts or not.
     public let hogwartsStudent: Bool
+    
+    /// A boolean value indicating whether the character is a staff member at Hogwarts or not.
     public let hogwartsStaff: Bool
+    
+    /// The name of the actor who portrayed this character in the Harry Potter movies, represented as a String.
     public let actor: String
+    
+    /// An array of alternate actors who portrayed this character, represented as an array of Strings.
     public let alternateActors: [String]
+    
+    /// A boolean value indicating whether the character is alive or not.
     public let alive: Bool
+    
+    /// The URL or path to an image representing the character, represented as a String.
     public let image: String
 
     private enum CodingKeys: String, CodingKey {

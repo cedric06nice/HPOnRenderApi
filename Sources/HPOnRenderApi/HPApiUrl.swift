@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 internal class HPApiUrl {
     
     internal var endpoint = "https://hp-api.onrender.com/api"

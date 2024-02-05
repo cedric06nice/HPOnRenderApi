@@ -7,9 +7,20 @@
 
 import Foundation
 
+/**
+ * The `HPSpells` struct represents a spell in the Harry Potter universe.
+ *
+ * It conforms to the `Codable` and `Hashable` protocols.
+ */
 public struct HPSpells: Codable, Hashable {
+    
+    /// The unique identifier of the spell.
     public let id: UUID
+    
+    /// The name of the spell.
     public let name: String
+    
+    /// A description of the spell.
     public let description: String
 
     private enum CodingKeys: String, CodingKey {
